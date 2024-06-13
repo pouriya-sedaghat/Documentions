@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Create Custom Class */
+
+@layer utilities {
+  .bg-siyah {
+    background-color: black;
+  }
+  .color-sefid {
+    color: white;
+  }
+}

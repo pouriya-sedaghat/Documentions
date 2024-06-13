@@ -1,0 +1,5 @@
+[
+  { "title": "Book One", "price": "10000", "id": "p1" },
+  { "title": "Book Two", "price": "2600", "id": "p2" },
+  { "title": "Book Three", "price": "59455", "id": "p3" }
+]

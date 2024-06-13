@@ -1,0 +1,19 @@
+{
+  "name": "ajax-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch users.json -p 5000 -d 2000",
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "json-server": "^0.17.4",
+    "lite-server": "^2.6.1"
+  }
+}

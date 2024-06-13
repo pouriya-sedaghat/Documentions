@@ -1,0 +1,633 @@
+/* use of css */
+
+/* p {
+    color: green;
+    color: green !important;
+} */
+
+/*selectors */
+
+P {
+  color: gray;
+}
+
+#content {
+  color: aqua;
+}
+
+.parag {
+  color: blueviolet;
+}
+
+/* full side border full property */
+
+/*  property-periority */
+
+/* .text-property {
+    border-width: 1px;
+    border-style: solid;
+    border-color: greenyellow;
+} */
+
+/* full side border short hand */
+
+/* .text-property {
+    border: 1px solid gold;
+} */
+
+/* border side border full property */
+
+/* .text-property {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-color: red;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-bottom-color: blue;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-top-color: plum;
+    border-left-width: 7px;
+    border-left-style: solid;
+    border-left-color: yellow;
+} */
+
+/* border side border short hand */
+
+/* .text-property {
+    border-top: 4px solid red;
+    border-right: 3px solid greenyellow;
+    border-bottom: 2px solid gold;
+    border-left: 1px solid blue;
+} */
+
+/* .text-property {
+    border-width: 10px 5px 15px 20px;
+    border-style: solid;
+    border-color: blue red;
+} */
+/* solid dotted dashed double none inset outset groove ridge*/
+
+/* border-radius full side */
+
+/* .text-property {
+    background-color: aqua;
+    border-radius: 5px;
+    border-radius: 20%;
+} */
+
+/* border-radius side full property */
+
+/* .text-property {
+    background-color: aqua;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+} */
+
+/* border-radius side short hand*/
+
+/* .text-property {
+    background-color: aqua;
+    border-radius: 2px 3px 10px 20px;
+} */
+
+/* border-image */
+
+/* .text-property {
+    border:1px solid black;
+    border-image-source: url('/images/harchi.png');
+    border-image-slice: 15 13 16 12;
+    border-image-width: 15px;
+    border-image-repeat: stretch;
+    border-image-outset: 10px;
+    border-image-outset: -10px;
+} */
+/* stretch repeat round space*/
+
+/* outline full property*/
+
+/* .text-property {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: green;
+    outline-offset: 5px;
+    outline-offset: -5px;
+} */
+
+/* outline short hand*/
+
+/* .text-property {
+    outline: 1px solid yellow;
+    outline-offset: -3px;
+} */
+
+/* background */
+
+/* .text-property{
+    background-color: aquamarine;
+    opacity: .5;
+    background-clip: border-box;
+
+    background-image: url('/images/harchi.png');
+    background-origin: padding-box;
+} */
+/* border-box padding-box content-box */
+
+/* background-image */
+
+/* .text-property{
+    background-image: url('...');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: scroll;
+} */
+/* repeat no-repeat repeat-x repeat-y round space*/
+/* contain conver auto ... */
+/* top right bottom left (top right) ... */
+/* scroll fixed local */
+
+/* spacing */
+
+/* .text-property{
+    background-color: aqua;
+    padding: 3px 5px 7px 2px;
+    margin: 1px 5px 4px 6px;
+} */
+
+/* box sizing */
+
+/* .text-property{
+    box-sizing: content-box;
+} */
+/* border-box content-box */
+
+/* text property */
+
+/* .text-property {
+    color: red;
+    background-color: gray;
+    text-align: justify;
+    direction: ltr;
+    text-align-last: center;
+    text-decoration: line-through;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: goldenrod;
+    text-decoration-thickness: 1.5px;
+    text-transform: capitalize;
+    text-indent: 10px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-shadow: 5px 5px 3px blue,-5px -5px 3px blue;
+} */
+/* left right center justify */
+/* lrt rtl */
+/* none underline overline line-through */
+/* none uppercase lowercase capitalize*/
+
+/* box-shadow */
+
+/* .test {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px grey,inset 5px 5px 10px orange;
+    box-shadow: 3px 3px 6px 1px black;
+} */
+
+/* cursor */
+
+/* .text-property{
+    cursor: zoom-out;
+} */
+/* auto none pointer progress wait text zoom-in zoom-out */
+
+/* textarea{
+    resize: both;
+} */
+/* both horizontal vertical none*/
+
+/* font */
+
+/* .text-property {
+    font-family: serif;
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
+} */
+/* serif sans-serif monospace */
+/* normal bold bolder lighter 100 ... 900 */
+/* normal italic oblique */
+/* normal small-caps */
+
+/* use of font in project */
+
+/* multi font */
+
+/* .text-property{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+/* google CDN */
+
+/* .text-property {
+    font-family: 'Roboto', sans-serif;
+} */
+
+/* download font file */
+
+/* .text-property {
+    @font-face {
+        font-family: 'harchi';
+        src: url('/fonts/harchi.woff2') format('woff2');
+        src: url('/fonts/harchi.woff2') format('woff');
+    }
+} */
+
+/* list-style-image */
+
+/* .test {
+    width: 50%;
+    margin: 0 auto;
+    background-color: yellow !important;
+} */
+
+/* .test>ul{
+    list-style-image: url('...');
+    list-style-position: inside;
+} */
+
+/* link status */
+
+/* #statuse:link {
+    color: red;
+}
+
+#statuse:visited {
+    color: green;
+}
+
+#statuse:hover {
+    color: blue;
+}
+
+#statuse:active {
+    color: yellow;
+} */
+
+/* display */
+
+/* .test{
+    display: block;
+} */
+/* block inline-block inline none flex grid */
+
+/* visibility */
+
+/* .test{
+    visibility: hidden;
+} */
+/* visible hidden */
+
+/* diplay flex */
+/* 
+.flex {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.flex div {
+    align-self: flex-start;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex: 0 1 auto;
+    order: 0;
+} */
+
+/* row row-reverse column column-reverse */
+/* nowrap wrap wrap-reverse */
+/* flex-start flex-end center space-around space-between space-evenly */
+/* stretch flex-start flex-end center baseline */
+/* stretch flex-start flex-end center space-around space-between */
+
+/* overflow */
+
+/* .test{
+    overflow: auto;
+} */
+/* visible hidden scroll auto */
+
+/* clear */
+
+/* .text-property{
+    float: left;
+}
+
+.test{
+    clear: left;
+} */
+/* none left right both */
+
+/* position */
+
+/* body {
+    height: 3000px;
+}
+
+.posi {
+    width: 300px;
+    height: 300px;
+}
+
+#p1 {
+    background-color: red;
+    position: static;
+}
+
+#p2 {
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#p3 {
+    background-color: green;
+    position: relative;
+    z-index: 3;
+    top: 10px;
+}
+
+#p4 {
+    background-color: yellow;
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    
+    inset: 0;
+    margin: 0 auto;
+}
+
+#p5 {
+    background-color: red;
+    position: sticky;
+    top: 20px;
+    z-index: 5;
+} */
+
+/* combinators */
+
+/* decendent selector */
+
+/* div p */
+
+/* direct child selector */
+
+/* div>p */
+
+/* adjacent sibling selector */
+
+/* div+p */
+
+/* general sibling selector */
+
+/* div~p */
+
+/* pseudo class */
+
+/* div p:first-of-type
+div p:last-of-type
+div p:nth-of-type()
+div p:not(:first-of-type)
+div p:nth-of-type(odd)
+div p:nth-of-type(even) */
+
+/* pseodo class for input */
+
+/* input:focus {
+    border: 1px solid blue;
+}
+
+input:required {
+    border: 1px solid yellow;
+}
+
+input:out-of-range {
+    border: 1px solid red;
+}
+
+input:in-range {
+    border: 1px solid green;
+}
+
+input:valid {
+    border: 1px solid red;
+}
+
+input:invalid {
+    border: 1px solid green;
+}
+
+input:empty {
+    border: 1px solid orange;
+}
+
+input:not(:placeholder-shown) {
+    border: 1px solid rgb(192, 246, 255);
+}
+
+input:optional {
+    border: 1px solid darkblue;
+}
+
+input:disabled {
+    border: 1px solid rgb(192, 246, 255);
+}
+
+input:read-only {
+    border: 1px solid rgb(192, 246, 255);
+} */
+
+/* input::placeholder {
+    color: blue !important;
+}
+
+input {
+    caret-color: red;
+} */
+
+/* #radio-or-checkbox{
+    accent-color: red;
+} */
+
+/* sprite image */
+
+/* div{
+    background: url('...') 0px 0px;
+} */
+
+/* gradient */
+
+/* .gradient {
+    width: 500px;
+    height: 500px;
+
+    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(red 0%, red 50%, blue 50%, blue 100%);
+    background-image: repeating-linear-gradient(red 0%, red 10%, blue 20%, blue 30%);
+    background-image: repeating-linear-gradient(red 0%, red 10%, blue 10%, blue 20%);
+    background-image: repeating-linear-gradient(to right, red 0%, red 10%, blue 10%, blue 20%);
+
+    background-image: radial-gradient(circle, red, blue);
+    background-image: radial-gradient(circle, red 0%, red 50%, blue 50%, blue 100%);
+    background-image: repeating-radial-gradient(circle, red 0%, red 10%, blue 20%, blue 30%);
+    background-image: repeating-radial-gradient(circle, red 0%, red 10%, blue 10%, blue 20%);
+
+    background-image: conic-gradient(red, blue);
+    background-image: conic-gradient(red 0%, red 50%, blue 50%, blue 100%);
+    background-image: repeating-conic-gradient(red 0%, red 10%, blue 20%, blue 30%);
+    background-image: repeating-conic-gradient(red 0%, red 10%, blue 10%, blue 20%);
+    background-image: repeating-conic-gradient(from 50deg at 50% 40%,red 0%, red 10%, blue 10%, blue 20%);
+} */
+
+/* vendor prefix */
+
+/* .test {
+    -webkit-animation: ;
+    -moz-animation: ;
+    -ms-animation: ;
+    -o-animation: ;
+    animation: ;
+} */
+
+/* transition full property */
+
+/* a {
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+} */
+
+/* transition short hand */
+
+/* a {
+    transition: all 1000ms steps(5, end) 0s;
+} */
+/* linear ease ease-in-out ease-in ease-out step() qbic-bezier() */
+
+/* transform */
+
+/* .test {
+    transform: translateX(500px);
+    transform: translateY(500px);
+    transform: translate(500px,200px);
+    transform: scaleX(1);
+    transform: scaleY(1);
+    transform: scale(1,1);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: rotateZ(10deg);
+    transform: rotate(10deg);
+    transform: skewX(-30deg);
+    transform: skewY(-30deg);
+    transform: skew(30deg,30deg);
+} */
+
+/* animation full property*/
+
+/* @keyframes area-text {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(600px);
+    }
+} */
+
+/* @keyframes area-text {
+    0% {}
+
+    25% {}
+
+    50% {}
+
+    75% {}
+
+    100% {}
+} */
+
+/* textarea {
+    animation-name: 'area-text';
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+} */
+/* infinite */
+/* normal reverse alternate alternate-reverse */
+
+/* animation short hand*/
+
+/* textarea {
+    animation: 'area-text' 500ms linear 0s 1 normal none running;
+} */
+
+/* media query */
+
+/* @media all and (min-width:) and (max-width:){
+    
+} */
+/* screen print speech all */
+
+/* 0px->575px 576px->767px 768px->991px 992px->1199 1200px->1399px 1400px->...*/
+
+/* width or hight */
+
+/* min-content fit-content max-content */
+
+/* user-select */
+
+/* auto none all contain text */
+
+/* objext-fit */
+
+/* fill contain cover none scale-down*/
+
+/* objext-position */
+
+/* top right center left bottom ... */
+
+/* backface-visibility */
+
+/* visible hidden */
+
+/* --bs-breadcrumb-divider:'>' */
+
+/* variable */
+
+/* :root {
+    --harchi: red;
+}
+
+a {
+    color: var(--harchi);
+
+    color: attr();
+} */

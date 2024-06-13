@@ -1,0 +1,6 @@
+0px to 575px portrait mobile => extra small => xs
+576px to 767px landscape mobile => small => sm
+768px to 991px tablet => medium => md
+992px to 1199px notebook or small monitor large => lg
+1200px to 1399px monitor => extra large => xl
+1400px to ... TV or big monitor => extra extra large => xxl

@@ -1,0 +1,78 @@
+// variable and importing
+
+// @import "variables.scss";
+
+// p {
+//   color: $harchi;
+// }
+
+// nesting
+
+// div {
+//     height: 50px;
+//     background-color: black;
+
+//     ul {
+//         display: flex;
+//         justify-content: center;
+//         list-style-type: none;
+//         align-items: center;
+//         height: 100%;
+
+//         li {
+//             margin: 0 15px;
+
+//             a {
+//                 display: block;
+//                 line-height: 50px;
+//                 text-decoration: none;
+//                 font-size: 20px;
+//                 font-family: sans-serif;
+//                 color: white;
+//                 padding: 0 10px;
+//                 transition: all 300ms linear 0s;
+
+//                 &:hover {
+//                     text-shadow: 2px 2px 5px white;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// mixin
+
+@keyframes harchi {
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(700px, 500px);
+  }
+}
+
+@mixin anim(
+  $an: harchi,
+  $ad: 1s,
+  $af: linear,
+  $ade: 0s,
+  $ai: infinite,
+  $adi: alternate,
+  $afm: both,
+  $ap: running
+) {
+  -webkit-animation: $an $ad $af $ade $ai $adi $afm $ap;
+  -moz-animation: $an $ad $af $ade $ai $adi $afm $ap;
+  -ms-animation: $an $ad $af $ade $ai $adi $afm $ap;
+  -o-animation: $an $ad $af $ade $ai $adi $afm $ap;
+  -webkit-animation: $an $ad $af $ade $ai $adi $afm $ap;
+}
+
+.mix {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+
+  @include anim();
+}

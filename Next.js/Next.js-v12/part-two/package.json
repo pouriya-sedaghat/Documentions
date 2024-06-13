@@ -1,0 +1,22 @@
+{
+  "name": "part-two",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "server": "json-server --watch db.json -p 5000 -d 1000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.3"
+  }
+}

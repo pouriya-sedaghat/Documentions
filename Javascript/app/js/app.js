@@ -497,6 +497,8 @@
 // combine.reverse();
 // console.log(combine); // effect to source
 
+// console.log(combine.includes("d")); // effect to source
+
 // object
 
 // const obj = {};
@@ -656,9 +658,10 @@
 
 // console.log(String.fromCharCode(90));
 
-// content = "123";
+// content = 123456;
 
 // console.log(content.toString());
+// console.log(content.toLocaleString());
 
 // number methods
 

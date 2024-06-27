@@ -1,115 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css grid</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
     <style>
-        .grid-container {
-            display: grid;
-            /* display: inline-grid; */
+      .container {
+        display: grid;
+        /* grid-template-rows: 100px 100px 100px 100px 100px; */
+        /* grid-template-columns: 100px 100px 100px 100px 100px; */
 
-            /* grid-template-columns: auto auto auto auto; */
-            /* grid-template-columns: 50px 50px 50px 50px; */
-            /* grid-template-columns: 10% 10% 10% 10%; */
+        /* grid-template-rows: 100px 100px 100px; */
+        /* grid-template-columns: 100px 100px; */
 
-            /* justify-content: center; */
-            /* align-content: space-evenly; */
+        /* grid-auto-rows: 100px; */
 
-            grid-template-rows: auto auto auto auto;
-            /* grid-template-rows: 200px 200px 200px 200px; */
+        /* grid-auto-columns: 100px; */
 
-            /* column-gap: 10px; */
-            /* row-gap: 10px; */
-            /* gap: 10px 10px; */
+        /* grid-auto-flow: column; */
 
-            /* grid-column-gap: 10px; */
-            /* grid-row-gap: 10px; */
-            /* grid-gap: 10px 10px; */
+        /* grid-template-rows: 1fr 1fr ; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
 
-            /* grid-auto-columns: auto; or grid-template-columns: auto auto auto auto; */
-            /* grid-auto-rows: auto; or grid-template-rows: auto auto auto auto; */
-            /* grid-auto-columns: 100px; and grid-area */
-            /* grid-auto-rows: 100px; and grid-area */
+        /* grid-template-rows: repeat(2, 1fr); */
+        /* grid-template-columns: 1fr minmax(100px, 2fr) 1fr; */
 
-            /* grid-auto-flow: row; */
-            /* grid-auto-flow: column; */
+        /* grid-gap: 10px; */
+        /* gap: 10px; */
 
-            grid-template-areas: 'itema itema itema . itemb' '. . . itemc itemb' '. . .  itemc .';
-        }
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-columns: 1fr 3fr; */
 
-        .item-grid {
-            background-color: antiquewhite;
-        }
+        /* grid-template-areas: "Header Header" "Aside Main" "Footer Footer"; */
 
-        .item-grid:first-of-type {
-            /* grid-row-start: 1; */
-            /* grid-row-end: 3; */
-            /* grid-row: 1 / 3; */
-            /* grid-column-start: 1; */
-            /* grid-column-end: 3; */
-            /* grid-column: 1 / 3; */
+        /* grid-template-rows: repeat(4, 100px);
+        grid-template-columns: repeat(4, 100px) repeat(4, 100px); */
 
-            /* grid-area: 1 / 1 / 3 / 3; */
-            grid-area: itema;
-        }
+        /* justify-items: baseline; */
+        /* align-items: baseline; */
 
-        .item-grid:nth-of-type(2) {
-            /* grid-area: 1 / 3 / span 2 / span 2; */
-            grid-area: itemb;
-        }
+        /* grid-template-rows: repeat(2, 100px); */
+        /* grid-template-columns: repeat(2, 100px); */
 
-        .item-grid:nth-of-type(3) {
-            /* grid-area: 1 / 5 / span 2 / span 2; */
-            grid-area: itemc;
-        }
+        /* height: 1000px; */
 
-        /* .item-grid:nth-of-type(4) {
-            grid-area: 1 / 7 / span 2 / span 2;
-        }
+        /* justify-content: space-evenly; */
+        /* align-content: space-evenly; */
 
-        .item-grid:nth-of-type(5) {
-            grid-area: 3 / 1 / span 2 / span 2;
-        }
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
-        .item-grid:nth-of-type(6) {
-            grid-area: 3 / 3 / span 2 / span 2;
-        }
+        border: 1px solid blue;
+      }
 
-        .item-grid:nth-of-type(7) {
-            grid-area: 3 / 5 / span 2 / span 2;
-        }
+      .item {
+        border: 1px solid red;
+      }
 
-        .item-grid:nth-of-type(8) {
-            grid-area: 3 / 7 / span 2 / span 2;
-        }
+      .item-1 {
+        /* grid-row-start: 1; */
+        /* grid-row-end: 3; */
+        /* grid-column-start: 1; */
+        /* grid-column-end: 4; */
 
-        .item-grid:nth-of-type(9) {
-            grid-area: 5 / 1 / span 2 / span 2;
-        }
+        /* grid-area: Header; */
+      }
 
-        .item-grid:last-of-type {
-            grid-area: 5 / 3 / span 2 / span 2;
-        } */
+      .item-2 {
+        /* grid-row: 1 / 2; */
+        /* grid-column: 4 / 6; */
+
+        /* grid-row: span 1; */
+        /* grid-column: span 2; */
+
+        /* grid-area: Aside; */
+      }
+
+      .item-3 {
+        /* grid-area: 3 / 1 / -1 / -1; */
+
+        /* grid-area: 2 / 2 / 4 / 4; */
+
+        /* z-index: -1; */
+        /* border: 1px solid aqua; */
+
+        /* grid-area: Main; */
+      }
+
+      .item-4 {
+        /* grid-area: Footer; */
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <p>hello to grid</p>
-    <div class="grid-container">
-        <div class="item-grid">1</div>
-        <div class="item-grid">2</div>
-        <div class="item-grid">3</div>
-        <!-- <div class="item-grid">4</div>
+  <body>
+    <!-- <p>hello to grid</p> -->
+    <!-- <div class="grid-container"> -->
+    <!-- <div class="item-grid">1</div> -->
+    <!-- <div class="item-grid">2</div> -->
+    <!-- <div class="item-grid">3</div> -->
+    <!-- <div class="item-grid">4</div>
         <div class="item-grid">5</div>
         <div class="item-grid">6</div>
         <div class="item-grid">7</div>
         <div class="item-grid">8</div>
         <div class="item-grid">9</div>
         <div class="item-grid">10</div> -->
-    </div>
-    <p>bye to grid</p>
-</body>
+    <!-- </div> -->
+    <!-- <p>bye to grid</p> -->
 
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+
+      <div class="item item-4">4</div>
+
+      <!-- <div class="item item-3">5</div>
+      <div class="item item-3">6</div>
+      <div class="item item-3">7</div> -->
+    </div>
+  </body>
 </html>

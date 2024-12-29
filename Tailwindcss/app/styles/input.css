@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset Code */
+
+@layer base {
+  /* body {
+    background-color: black;
+    color: white;
+  } */
+  @font-face {
+    font-family: "dana";
+    src: url("public/fonts/Roboto-Regular.woff2") format("woff2");
+  }
+}
+
+/* Best Method */
+
+/* @layer base {
+  body {
+    @apply bg-black text-white;
+  }
+} */
+
+/* Components */
+
+/* @layer components {
+  .btn-primary {
+    @apply bg-blue-700 text-white px-2.5 py-1 rounded-full border-2 border-dashed border-black hover:bg-blue-800 hover:text-gray-200 transition-all;
+  }
+} */
+
+/* Adding Custom Style */
+
+/* @layer utilities {
+  .btn {
+    border: 1px solid black;
+  }
+} */

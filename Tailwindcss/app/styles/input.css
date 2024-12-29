@@ -26,6 +26,9 @@
 /* Components */
 
 /* @layer components {
+  .container-fluid {
+    @apply w-full sm:px-8 px-4;
+  }
   .btn-primary {
     @apply bg-blue-700 text-white px-2.5 py-1 rounded-full border-2 border-dashed border-black hover:bg-blue-800 hover:text-gray-200 transition-all;
   }

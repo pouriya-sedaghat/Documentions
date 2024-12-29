@@ -690,30 +690,47 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 .animate-ping {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotateZ(45deg);
-  }
-
+@keyframes spin {
   to {
-    transform: rotateZ(360deg);
+    transform: rotate(360deg);
   }
-}
-
-.animate-rotate {
-  animation: rotate 3s linear 0s 1 normal backwards running;
 }
 
 .animate-spin {
@@ -845,10 +862,6 @@ video {
   background-color: rgb(4 47 46 / var(--tw-bg-opacity, 1));
 }
 
-.font-dana {
-  font-family: dana;
-}
-
 .text-9xl\/10 {
   font-size: 8rem;
   line-height: 2.5rem;
@@ -893,6 +906,9 @@ video {
 /* Components */
 
 /* @layer components {
+  .container-fluid {
+    @apply w-full sm:px-8 px-4;
+  }
   .btn-primary {
     @apply bg-blue-700 text-white px-2.5 py-1 rounded-full border-2 border-dashed border-black hover:bg-blue-800 hover:text-gray-200 transition-all;
   }

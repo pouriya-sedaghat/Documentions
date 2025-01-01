@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/globals.css" />
+
+    <script src="dist/main.js" defer></script>
+
+    <title>App Testing</title>
+  </head>
+  <body class="min-vh-100">
+    <form class="w-fit mx-auto mt-5 p-4 bg-primary rounded-4 text-white">
+      <h2 class="h4">Add Product</h2>
+      <div>
+        <label for="title">Title :</label>
+        <br />
+        <input
+          type="text"
+          id="title"
+          class="my-1 rounded border-0 px-2 py-1"
+          placeholer="Enter Your Title"
+          autofocus="autoFocus"
+        />
+      </div>
+      <div>
+        <label for="price">Price :</label>
+        <br />
+        <input
+          type="number"
+          id="price"
+          class="my-1 rounded border-0 px-2 py-1"
+          placeholer="Enter Your Price"
+          autofocus="autoFocus"
+        />
+      </div>
+      <button class="btn btn-outline-light mt-3" id="submit">submit</button>
+    </form>
+    <ul class="w-fit mx-auto list-unstyled mt-4" id="list">
+      <!-- Product By JS -->
+    </ul>
+
+    <button class="btn btn-primary my-3 d-block mx-auto" id="get-data">
+      Get Data
+    </button>
+  </body>
+</html>

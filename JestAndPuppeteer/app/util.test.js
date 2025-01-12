@@ -2,14 +2,14 @@
 //  * @jest-environment jsdom
 //  */
 
-const {
-  generateText,
-  validateAndGenerate,
-  createNewElement,
-  outputTitle,
-} = require("./util");
+// const {
+//   generateText,
+//   validateAndGenerate,
+//   createNewElement,
+//   outputTitle,
+// } = require("./util");
 
-// const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer");
 
 // Unit Test
 
@@ -37,30 +37,31 @@ const {
 //   expect(text).toBe("Title is Book One, Price is 100,000.");
 // });
 
-// End To End Test (E To E Test)
+// End To End Test (E2E Test)
 
-// test("UI Test", async () => {
-//   const browser = await puppeteer.launch({
-//     headless: false,
-//     slowMo: 80,
-//     arg: ["--window-size=1920,1080"],
-//   });
+test("UI Test", async () => {
+  const browser = await puppeteer.launch({
+    executablePath: "C:/users/zahra/.cache/puppeteer/chrome/chrome.exe",
+    headless: false,
+    slowMo: 80,
+    arg: ["--window-size=1920,1080"],
+  });
 
-//   const page = await browser.newPage();
-//   await page.goto("http://127.0.0.1/3000/");
+  const page = await browser.newPage();
+  await page.goto("http://127.0.0.1:3000/");
 
-//   await page.click("#title");
-//   await page.type("#title", "Book One");
-//   await page.click("#price");
-//   await page.type("#price", 100000);
+  await page.click("#title");
+  await page.type("#title", "Book One");
+  await page.click("#price");
+  await page.type("#price", "100000");
 
-//   await page.click("#submit");
-// });
+  await page.click("#submit");
+}, 11000);
 
 // Async Test
 
-test("API Test", () => {
-  outputTitle().then((title) => {
-    expect(title).toBe("delectus aut autem");
-  });
-});
+// test("API Test", () => {
+//   outputTitle().then((title) => {
+//     expect(title).toBe("delectus aut autem");
+//   });
+// });
